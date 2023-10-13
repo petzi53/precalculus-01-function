@@ -1,0 +1,178 @@
+---
+engine: knitr
+---
+
+# Functions
+
+::: {#def-relation-domain-range}
+##### Relation - domain - range
+
+> “A **relation** is a set of ordered pairs. The set of the first components of each ordered pair is called the **domain** and the set of the second components of each ordered pair is called the **range.**” ([Abramson, 2021, p. 18](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=FLKWG5KA))
+:::
+
+![](img/01-fig-01.png){#fig-01-01 
+fig-alt="" fig-align="center" 
+width="100%"}
+
+::: {#def-function}
+##### Function
+
+“A function is a relation in which each possible input value leads to exactly one output value. We say 'the output is a function of the input.' The input values make up the domain, and the output values make up the range.” ([Abramson, 2021, p. 18](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=6PJT7CNS))
+:::
+
+::: {.callout-important}
+**Given a relationship between two quantities, determine whether the relationship is a function.**
+
+1. Identify the input values.
+2. Identify the output values.
+3. If each input value leads to only one output value, classify the relationship as a function. If any input value leads to two or more outputs, do not classify the relationship as a function.
+:::
+
+::: {#exm-pricelist}
+Are price lists examples of functions?
+
+- Each item has its price, so the price is a function of its items. This is even valid if several items have the same price because there is for each item exactly one price.
+- Several items have the same price, that's why item is not a function of price.
+:::
+
+
+::: {#def-function-notation}
+
+##### Function Notation: Input value - independent variable & Output value - dependent variable
+
+> “The notation $y = f(x)$ defines a function named $f$, This is read as 'y is a function of x'. The letter $x$ represents the input value, or independent variable. The letter $y$ or $f(x)$ represents the output value, or dependent variable.” ([Abramson, 2021, p. 21](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=21&annotation=XWZMACMS))
+:::
+
+> “A common method of representing functions is in the form of a table. The table rows or columns display the corresponding input and output values.” ([Abramson, 2021, p. 22](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=22&annotation=NBNN3GKY))
+
+::: {.callout-important}
+
+**Given the formula for a function & evaluate**
+
+1. Substitute the input variable in the formula with the value provided.
+2. Calculate the result.
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 6**: Evaluating Functions at Specific Values
+:::
+::::{.my-example-container}
+Evaluate  $𝑓(𝑥)= x^2 + 3x − 4$ at:
+
+**x = 2**
+
+$$f(2) = 2^2 + 3 \times 2 - 4 = 6$$
+**a**
+
+$$f(a) = a^2 + 3a - 4$$
+**a + h**
+$$
+\begin{align*}
+f(a + h) = (a + h)^2 + 3(a + h) - 4 \\
+f(a + h) = a^2 + 2ah + h^2 + 3a + 3h -4
+\end{align*}
+$$
+
+**evaluate $\frac{f(a + h) - f(a)}{h}$**
+
+
+$$
+\begin{align*}
+\frac{f(a + h) - f(a)}{h} = \frac{a^2 + 2ah + h^2 + 3a + 3h -4 - (a^2 + 3a - 4)}{h}\\
+= \frac{2ah + h^2 + 3h}{h} \\
+= 2a + h + 3
+\end{align*}
+$$
+
+
+::::
+:::::
+
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 7**: Evaluating Functions
+:::
+::::{.my-example-container}
+**Given the function $h(p) = p^2 + 2p, evaluate  h(4)$$**
+
+$$
+\begin{align*}
+h(4) = 4^2 + 2 \times 4 \\
+h(4) = 24
+\end{align*}
+$$
+
+::::
+:::::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try It 4**: 
+:::
+::::{.my-example-container}
+Given the function $g(m) = \sqrt{m - 4}$, evaluate g(5)
+
+$$
+g(5) = \sqrt{5 - 4} = 1
+$$
+
+::::
+:::::
+
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 8**: Solving Functions
+:::
+::::{.my-example-container}
+Given the function $h(p) = p^2 + 2p$, solve for $h(p) = 3$
+
+$$
+\begin{align*}
+3 = p^2 + 2p\\
+\frac{3}{p} = p + 2 \\
+\frac{3}{p} - 2 = p
+\end{align*}
+$$
+
+```{r}
+curve(x^2 + 2 * x, -5, 5)
+```
+
+```{r}
+
+
+ggplot2::ggplot() +
+    ggplot2::xlim(-5, +5) +
+    ggplot2::geom_function(fun = function(x) x^2 + (2 * x)) +
+    ggplot2::geom_hline(yintercept = 3, linetype = "dashed") + 
+    ggplot2::theme_bw() +
+    ggplot2::labs(
+        title = expression(paste("Function h(p) = ", p^2 + 2 * p)),
+        x = "p",
+        y = "h(p)"
+    )
+```
+
+
+
+::::
+:::::
+
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try It 5**
+:::
+::::{.my-example-container}
+Given the function $g(m) = \sqrt{m - 4}$, solve $g(m) = 2$
+
+$$
+\begin{align*}
+2 = \sqrt{m - 4} \\
+\end{align*}
+$$
+::::
+:::::

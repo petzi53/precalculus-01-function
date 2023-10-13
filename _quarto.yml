@@ -10,7 +10,7 @@ book:
 
   chapters:
     - index.qmd
-    - 01-intro.qmd
+    - 01-functions.qmd
     - 95-references.qmd
 
 bibliography: references.bib
