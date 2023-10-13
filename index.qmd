@@ -1,0 +1,8 @@
+# Preface {.unnumbered}
+
+::: {.callout-note style="color: blue;"}
+#### This is work in progress: Just started (0%).
+:::
+
+This Quarto book collects my personal notes, trials and exercises of Abramson, J. (2021). [Precalculus 2e](https://openstax.org/details/books/precalculus-2e) (2nd ed.). OpenStax College. 
+
