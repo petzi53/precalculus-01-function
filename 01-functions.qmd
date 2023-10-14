@@ -4,6 +4,10 @@ engine: knitr
 
 # Functions
 
+## Functions and Function Notation
+
+### Determining Whether a Relation Represents a Function
+
 ::: {#def-relation-domain-range}
 ##### Relation - domain - range
 
@@ -36,6 +40,8 @@ Are price lists examples of functions?
 :::
 
 
+#### Using Function Notation
+
 ::: {#def-function-notation}
 
 ##### Function Notation: Input value - independent variable & Output value - dependent variable
@@ -43,7 +49,14 @@ Are price lists examples of functions?
 > “The notation $y = f(x)$ defines a function named $f$, This is read as 'y is a function of x'. The letter $x$ represents the input value, or independent variable. The letter $y$ or $f(x)$ represents the output value, or dependent variable.” ([Abramson, 2021, p. 21](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=21&annotation=XWZMACMS))
 :::
 
+#### Representing Functions Using Tables
+
 > “A common method of representing functions is in the form of a table. The table rows or columns display the corresponding input and output values.” ([Abramson, 2021, p. 22](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=22&annotation=NBNN3GKY))
+
+
+### Finding Input and Output Values of a Function
+
+#### Evaluation of Functions in Algebraic Forms
 
 ::: {.callout-important}
 
@@ -132,22 +145,47 @@ Given the function $h(p) = p^2 + 2p$, solve for $h(p) = 3$
 $$
 \begin{align*}
 3 = p^2 + 2p\\
-\frac{3}{p} = p + 2 \\
-\frac{3}{p} - 2 = p
+p^2 + 2p - 3 = 0 \text{ [substract 3 from each side]} \\
+(p + 3) (p - 1) = 0 \text{ [factor]}\\
+\text{set each factor equal to 0 and solve for p in each case} \\
+p + 3 = 0, p = -3 \\
+p - 1 = 0, p = +1
 \end{align*}
-$$
+$$ {#eq-example-8}
+::::
+:::::
+
+::: {.callout-warning}
+I couldn't solve Example 8 (@eq-example-8), because I didn't use the factor transformation of the equation. I came up with only one solution $p = 1$ after I had transformed to $p^2 + 2p - 3 = 0$. 
+:::
+
+:::::{.r-code}
+:::{.r-code-header}
+For a better understanding I replicated [Figure 6](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation#Figure_01_01_006) of the book, p.16.
+:::
+::::{.r-code-container}
+
 
 ```{r}
-curve(x^2 + 2 * x, -5, 5)
-```
-
-```{r}
-
+#| label: fig-pb-example-8
+#| fig-cap: "Graph for the function $h(p) = p^2 + 2p$ showing the solution for $h(p) = 3$"
+#| attr-source: '#lst-fig-pb-example-8 lst-cap="Plot function $h(p) = p^2 + 2p$"'
+#| fig.align: center
 
 ggplot2::ggplot() +
-    ggplot2::xlim(-5, +5) +
+    ggplot2::scale_x_continuous(limits = c(-5, 5), breaks = seq(-5, 5, 1)) +
     ggplot2::geom_function(fun = function(x) x^2 + (2 * x)) +
-    ggplot2::geom_hline(yintercept = 3, linetype = "dashed") + 
+    ggplot2::geom_hline(yintercept = 0, linetype = "solid") + 
+    ggplot2::geom_hline(yintercept = 3, linetype = "solid", 
+              color = "darkgreen", linewidth = 1) + 
+    ggplot2::geom_segment(ggplot2::aes(x = -3, y = 0, xend = -3, yend = +3, 
+              color = "orange"), show.legend = FALSE, linewidth = 1) +
+    ggplot2::geom_segment(ggplot2::aes(x = 1, y = 0, xend = 1, yend = +3, 
+              color = "orange"), show.legend = FALSE, linewidth = 1) +
+    ggplot2::geom_point(ggplot2::aes(x = -3, y = +3, 
+              fill = "blue"), size = 2, show.legend = FALSE) +
+        ggplot2::geom_point(ggplot2::aes(x = 1, y = +3, 
+              fill = "blue"), size = 2, show.legend = FALSE) +
     ggplot2::theme_bw() +
     ggplot2::labs(
         title = expression(paste("Function h(p) = ", p^2 + 2 * p)),
@@ -157,9 +195,9 @@ ggplot2::ggplot() +
 ```
 
 
-
 ::::
 :::::
+
 
 
 :::::{.my-example}
@@ -172,7 +210,37 @@ Given the function $g(m) = \sqrt{m - 4}$, solve $g(m) = 2$
 $$
 \begin{align*}
 2 = \sqrt{m - 4} \\
+2 = \sqrt{8 - 4} \\
+m = 8
 \end{align*}
 $$
 ::::
 :::::
+
+
+#### Evaluating Functions Expressed in Formulas
+
+::: {.callout-important}
+**Given a function in equation form, write its algebraic formula**
+
+> “Some functions are defined by mathematical rules or procedures expressed in equation form. If it is possible to express the function output with a formula involving the input quantity, then we can define a function in algebraic form.” ([Abramson, 2021, p. 26](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=26&annotation=4WB76Q72))
+
+1. Solve the equation to isolate the output variable on one side of the equal sign, with the other side as an expression that involves only the input variable.
+2. Use all the usual algebraic methods for solving equations, such as adding or subtracting the same quantity to or from both sides, or multiplying or dividing both sides of the equation by the same quantity. ([Abramson, 2021, p. 26](zotero://select/library/items/U57DQZPG))
+:::
+
+“As we saw above, we can represent functions in tables” ([Abramson, 2021, p. 27](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=27&annotation=DK3E2RBY))
+
+
+#### Evaluating a Function Given in Tabular Form
+
+
+### Determining Whether a Function is One-to-One
+
+### Using the Vertical Line Test
+
+### Using the Horizontal Line Test
+
+### Identifying Basic Toolkit Functions
+
+## Section Exercises
