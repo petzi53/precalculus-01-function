@@ -132,10 +132,44 @@
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  background-image: url("img/icons8/bullseye-48.png");
+  background-image: url("img/icons8/thinking-face-48.png");
 }
 
 .my-solution-container {
+  padding-top: 5px;
+  padding-left: 10px;
+  color: black;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
+
+
+/* ##############   Objectives   ############# */
+
+.my-objectives {
+  margin: 1em 0;
+  border: 2px solid black;
+  border-left: 10px solid #8B2500;
+  border-radius: 10px;
+}
+
+.my-objectives-header {
+  margin-left: 0;
+  padding-left:  60px;
+  padding-top:  5px;
+  padding-bottom: 0.1em;
+  color: black;
+  background-color: #FF4500;
+  border-top-right-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-image: url("img/icons8/bullseye-48.png");
+}
+
+.my-objectives-container {
   padding-top: 5px;
   padding-left: 10px;
   color: black;

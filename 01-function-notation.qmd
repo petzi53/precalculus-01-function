@@ -1,93 +1,119 @@
----
-engine: knitr
----
-
-
 # Functions and Function Notation
+
+:::::{.my-objectives}
+:::{.my-objectives-header}
+Learning Objectives
+:::
+::::{.my-objectives-container}
+- Determine whether a relation represents a function.
+- Find the value of a function.
+- Determine whether a function is one-to-one.
+- Use the vertical line test to identify functions.
+- Graph the functions listed in the library of functions.
+::::
+:::::
 
 ## Determining Whether a Relation Represents a Function
 
 ::: {#def-relation-domain-range}
 ##### Relation - domain - range
 
-> “A **relation** is a set of ordered pairs. The set of the first components of each ordered pair is called the **domain** and the set of the second components of each ordered pair is called the **range.**” ([Abramson, 2021, p. 18](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=FLKWG5KA))
+> "A **relation** is a set of ordered pairs. The set of the first
+> components of each ordered pair is called the **domain** and the set
+> of the second components of each ordered pair is called the
+> **range.**" ([Abramson, 2021, p.
+> 18](zotero://select/library/items/U57DQZPG))
+> ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=FLKWG5KA))
 :::
 
-![](img/01-fig-01.png){#fig-01-01 
-fig-alt="" fig-align="center" 
+![](img/01-fig-01.png){#fig-01-01 fig-alt="" fig-align="center"
 width="100%"}
 
 ::: {#def-function}
 ##### Function
 
-“A function is a relation in which each possible input value leads to exactly one output value. We say 'the output is a function of the input.' The input values make up the domain, and the output values make up the range.” ([Abramson, 2021, p. 18](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=6PJT7CNS))
+"A function is a relation in which each possible input value leads to
+exactly one output value. We say 'the output is a function of the
+input.' The input values make up the domain, and the output values make
+up the range." ([Abramson, 2021, p.
+18](zotero://select/library/items/U57DQZPG))
+([pdf](zotero://open-pdf/library/items/68C8JXSW?page=18&annotation=6PJT7CNS))
 :::
 
-::: {.callout-important}
-**Given a relationship between two quantities, determine whether the relationship is a function.**
+::: callout-important
+**Given a relationship between two quantities, determine whether the
+relationship is a function.**
 
-1. Identify the input values.
-2. Identify the output values.
-3. If each input value leads to only one output value, classify the relationship as a function. If any input value leads to two or more outputs, do not classify the relationship as a function.
+1.  Identify the input values.
+2.  Identify the output values.
+3.  If each input value leads to only one output value, classify the
+    relationship as a function. If any input value leads to two or more
+    outputs, do not classify the relationship as a function.
 :::
 
 ::: {#exm-pricelist}
 Are price lists examples of functions?
 
-- Each item has its price, so the price is a function of its items. This is even valid if several items have the same price because there is for each item exactly one price.
-- Several items have the same price, that's why item is not a function of price.
+-   Each item has its price, so the price is a function of its items.
+    This is even valid if several items have the same price because
+    there is for each item exactly one price.
+-   Several items have the same price, that's why item is not a function
+    of price.
 :::
-
 
 ### Using Function Notation
 
 ::: {#def-function-notation}
-
 ##### Function Notation: Input value - independent variable & Output value - dependent variable
 
-> “The notation $y = f(x)$ defines a function named $f$, This is read as 'y is a function of x'. The letter $x$ represents the input value, or independent variable. The letter $y$ or $f(x)$ represents the output value, or dependent variable.” ([Abramson, 2021, p. 21](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=21&annotation=XWZMACMS))
+> "The notation $y = f(x)$ defines a function named $f$, This is read as
+> 'y is a function of x'. The letter $x$ represents the input value, or
+> independent variable. The letter $y$ or $f(x)$ represents the output
+> value, or dependent variable." ([Abramson, 2021, p.
+> 21](zotero://select/library/items/U57DQZPG))
+> ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=21&annotation=XWZMACMS))
 :::
 
 ### Representing Functions Using Tables
 
-> “A common method of representing functions is in the form of a table. The table rows or columns display the corresponding input and output values.” ([Abramson, 2021, p. 22](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=22&annotation=NBNN3GKY))
-
+> "A common method of representing functions is in the form of a table.
+> The table rows or columns display the corresponding input and output
+> values." ([Abramson, 2021, p.
+> 22](zotero://select/library/items/U57DQZPG))
+> ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=22&annotation=NBNN3GKY))
 
 ## Finding Input and Output Values of a Function
 
 ### Evaluation of Functions in Algebraic Forms
 
-::: {.callout-important}
-
+::: callout-important
 **Given the formula for a function & evaluate**
 
-1. Substitute the input variable in the formula with the value provided.
-2. Calculate the result.
+1.  Substitute the input variable in the formula with the value
+    provided.
+2.  Calculate the result.
 :::
 
-:::::{.my-example}
-:::{.my-example-header}
+::: my-example
+::: my-example-header
 **Example 6**: Evaluating Functions at Specific Values
 :::
-::::{.my-example-container}
-Evaluate  $𝑓(𝑥)= x^2 + 3x − 4$ at:
+
+::: my-example-container
+Evaluate $𝑓(𝑥)= x^2 + 3x − 4$ at:
 
 **x = 2**
 
-$$f(2) = 2^2 + 3 \times 2 - 4 = 6$$
-**a**
+$$f(2) = 2^2 + 3 \times 2 - 4 = 6$$ **a**
 
-$$f(a) = a^2 + 3a - 4$$
-**a + h**
-$$
+$$f(a) = a^2 + 3a - 4$$ **a + h** $$
 \begin{align*}
 f(a + h) = (a + h)^2 + 3(a + h) - 4 \\
 f(a + h) = a^2 + 2ah + h^2 + 3a + 3h -4
 \end{align*}
 $$
 
-**evaluate $\frac{f(a + h) - f(a)}{h}$**
-
+**evaluate** $\frac{f(a + h) - f(a)}{h}$
 
 $$
 \begin{align*}
@@ -96,18 +122,16 @@ $$
 = 2a + h + 3
 \end{align*}
 $$
+:::
+:::
 
-
-::::
-:::::
-
-
-:::::{.my-example}
-:::{.my-example-header}
+::: my-example
+::: my-example-header
 **Example 7**: Evaluating Functions
 :::
-::::{.my-example-container}
-**Given the function $h(p) = p^2 + 2p, evaluate  h(4)$$**
+
+::: my-example-container
+**Given the function** $h(p) = p^2 + 2p, evaluate h(4)$\$
 
 $$
 \begin{align*}
@@ -115,30 +139,29 @@ h(4) = 4^2 + 2 \times 4 \\
 h(4) = 24
 \end{align*}
 $$
-
-::::
-:::::
-
-:::::{.my-example}
-:::{.my-example-header}
-**Try It 4**: 
 :::
-::::{.my-example-container}
+:::
+
+::: my-example
+::: my-example-header
+**Try It 4**:
+:::
+
+::: my-example-container
 Given the function $g(m) = \sqrt{m - 4}$, evaluate g(5)
 
 $$
 g(5) = \sqrt{5 - 4} = 1
 $$
+:::
+:::
 
-::::
-:::::
-
-
-:::::{.my-example}
-:::{.my-example-header}
+::: my-example
+::: my-example-header
 **Example 8**: Solving Functions
 :::
-::::{.my-example-container}
+
+::: my-example-container
 Given the function $h(p) = p^2 + 2p$, solve for $h(p) = 3$
 
 $$
@@ -151,20 +174,23 @@ p + 3 = 0, p = -3 \\
 p - 1 = 0, p = +1
 \end{align*}
 $$ {#eq-example-8}
-::::
-:::::
-
-::: {.callout-warning}
-I couldn't solve Example 8 (@eq-example-8), because I didn't use the factor transformation of the equation. I came up with only one solution $p = 1$ after I had transformed to $p^2 + 2p - 3 = 0$. 
+:::
 :::
 
-:::::{.r-code}
-:::{.r-code-header}
-For a better understanding I replicated [Figure 6](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation#Figure_01_01_006) of the book, p.16.
+::: callout-warning
+I couldn't solve Example 8 (@eq-example-8), because I didn't use the
+factor transformation of the equation. I came up with only one solution
+$p = 1$ after I had transformed to $p^2 + 2p - 3 = 0$.
 :::
-::::{.r-code-container}
 
+::: r-code
+::: r-code-header
+For a better understanding I replicated [Figure
+6](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation#Figure_01_01_006)
+of the book, p.16.
+:::
 
+::: r-code-container
 ```{r}
 #| label: fig-pb-example-8
 #| fig-cap: "Graph for the function $h(p) = p^2 + 2p$ showing the solution for $h(p) = 3$"
@@ -192,18 +218,15 @@ ggplot2::ggplot() +
         y = "h(p)"
     )
 ```
+:::
+:::
 
-
-::::
-:::::
-
-
-
-:::::{.my-example}
-:::{.my-example-header}
+::: my-example
+::: my-example-header
 **Try It 5**
 :::
-::::{.my-example-container}
+
+::: my-example-container
 Given the function $g(m) = \sqrt{m - 4}$, solve $g(m) = 2$
 
 $$
@@ -213,25 +236,184 @@ $$
 m = 8
 \end{align*}
 $$
-::::
-:::::
-
+:::
+:::
 
 ### Evaluating Functions Expressed in Formulas
 
-::: {.callout-important}
+::: callout-important
 **Given a function in equation form, write its algebraic formula**
 
-> “Some functions are defined by mathematical rules or procedures expressed in equation form. If it is possible to express the function output with a formula involving the input quantity, then we can define a function in algebraic form.” ([Abramson, 2021, p. 26](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=26&annotation=4WB76Q72))
+> "Some functions are defined by mathematical rules or procedures
+> expressed in equation form. If it is possible to express the function
+> output with a formula involving the input quantity, then we can define
+> a function in algebraic form." ([Abramson, 2021, p.
+> 26](zotero://select/library/items/U57DQZPG))
+> ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=26&annotation=4WB76Q72))
 
-1. Solve the equation to isolate the output variable on one side of the equal sign, with the other side as an expression that involves only the input variable.
-2. Use all the usual algebraic methods for solving equations, such as adding or subtracting the same quantity to or from both sides, or multiplying or dividing both sides of the equation by the same quantity. ([Abramson, 2021, p. 26](zotero://select/library/items/U57DQZPG))
+1.  Solve the equation to isolate the output variable on one side of the
+    equal sign, with the other side as an expression that involves only
+    the input variable.
+2.  Use all the usual algebraic methods for solving equations, such as
+    adding or subtracting the same quantity to or from both sides, or
+    multiplying or dividing both sides of the equation by the same
+    quantity. ([Abramson, 2021, p.
+    26](zotero://select/library/items/U57DQZPG))
 :::
 
-“As we saw above, we can represent functions in tables” ([Abramson, 2021, p. 27](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=27&annotation=DK3E2RBY))
+:::::{.my-example}
+:::{.my-example-header}
+**Example 9**: Finding an Equation of a Function
+:::
+::::{.my-example-container}
+Express the relationship  $2n + 6p = 12$ as a function $p = f(n)$, if possible.
 
+$$
+\begin{align*}
+2n + 6p = 12 \\
+6p = 12 - 2n \\
+p = \frac{12 - 2n}{6} \\
+p = \frac{6 - n}{3} \\
+p = 2 - \frac{1}{3}n \\
+p = f(n) = 2 - \frac{1}{3}n
+\end{align*}
+$$
+
+::::
+:::::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 10**: Expressing the Equation of a Circle as a Function
+:::
+::::{.my-example-container}
+Does the equation $x^2 + y^2 = 1$ represent a function with $x$ as input and $y$ as output? If so, express the relationship as a function $y = f(x)$. 
+
+$$
+\begin{align*}
+x^2 + y^2 = 1 \\
+y^2 = 1 - x^2 \\
+y = \sqrt{1 - x^2} \\
+\end{align*}
+$$
+
+::::
+:::::
+
+::: {.callout-warning}
+My solution is wrong as it would mean that $y = f(x)$ could be represented as function! I did not take into account that there are **two solutions**: $y = \pm \sqrt{1 - x^2}$. We get for $y$ two outputs; the formula is therefore not a function. 
+:::
+
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try It 6**
+:::
+::::{.my-example-container}
+If $x-8y^3=0$, express $y as a function of $x$:
+
+$$
+\begin{align*}
+x-8y^3=0 \\
+-8y^3 = -x \\ 
+y^3 = \frac{x}{8} \\
+y = \frac{\sqrt[3]{x}}{8}\\
+y = f(x) = \frac{1}{2} \sqrt[3]{x}
+\end{align*}
+$$
+::::
+:::::
+
+::: {.callout-note}
+There are relationships expressed by an equation that do represent a function but cannot be represented by an algebraic formula.
+:::
 
 ### Evaluating a Function Given in Tabular Form
+
+> “As we saw above, we can represent functions in tables. Conversely, we can use information in tables to write functions, and we can evaluate functions using the tables.” ([Abramson, 2021, p. 27](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=27&annotation=ZJ3WDDHY))
+
+::: {.callout-important}
+
+**Given is input value, identify output value**
+
+1. Find the given input in the row (or column) of input values.
+2. Identify the corresponding output value paired with that input value.
+
+**Given is output value, identify input value**
+
+1. Find the given output values in the row (or column) of output values, noting every time that output value appears.
+2. Identify the input value(s) corresponding to the given output value.
+
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 11**
+:::
+::::{.my-example-container}
+
+
+|   $n$  | 1 | 2 | 3 | 4 | 5 |
+|:----:|---|---|---|---|---|
+| $g(n)$ | 8 | 6 | 7 | 6 | 8 |
+
+: Evaluating and Solving a Tabular Function {#tbl-tabular-function}
+
+**Evaluate  $g(3)$** **Solution: g(3) = 7**
+
+
+**Solve $g(n) = 6$** **Solution: n = 2 and n = 4**
+
+
+::::
+:::::
+
+::: {.callout-warning}
+Again I have not followed exactly the proposed procedure "noting **every time** that output value appears". So I have only reported the first part of the solution $n = 2$!
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 7**
+:::
+::::{.my-example-container}
+Using @tbl-tabular-function to evaluate $g(1)$. **Solution $g(1) = 8$**
+::::
+:::::
+
+### Finding Function Values from a Graph
+
+::: {.callout-note}
+Don't forget: Solving a function equation using a graph requires **finding all instances** of the given output value on the graph and observing the corresponding input value(s).
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 12**: Reading Function Values from a Graph
+:::
+::::{.my-example-container}
+![The given graph](img/01-fig-07.png){#fig-01-07 fig-alt="parable with f(1) = 0, and f(0) = 1" fig-align="center"
+width="70%"}
+
+***
+Evaluate $f(2)$: **Solution = f(2) = 1**
+
+Solve $f(x)=4$: **Solution = f(3) and f(-1)**
+::::
+:::::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 8**
+
+
+:::
+::::{.my-example-container}
+Using @fig-01-07 solve $f(x) = 1$ 
+
+**Solution $f(0)$ and $f(2)$**.
+::::
+:::::
 
 
 ## Determining Whether a Function is One-to-One
