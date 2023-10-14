@@ -2,11 +2,10 @@
 engine: knitr
 ---
 
-# Functions
 
-## Functions and Function Notation
+# Functions and Function Notation
 
-### Determining Whether a Relation Represents a Function
+## Determining Whether a Relation Represents a Function
 
 ::: {#def-relation-domain-range}
 ##### Relation - domain - range
@@ -40,7 +39,7 @@ Are price lists examples of functions?
 :::
 
 
-#### Using Function Notation
+### Using Function Notation
 
 ::: {#def-function-notation}
 
@@ -49,14 +48,14 @@ Are price lists examples of functions?
 > “The notation $y = f(x)$ defines a function named $f$, This is read as 'y is a function of x'. The letter $x$ represents the input value, or independent variable. The letter $y$ or $f(x)$ represents the output value, or dependent variable.” ([Abramson, 2021, p. 21](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=21&annotation=XWZMACMS))
 :::
 
-#### Representing Functions Using Tables
+### Representing Functions Using Tables
 
 > “A common method of representing functions is in the form of a table. The table rows or columns display the corresponding input and output values.” ([Abramson, 2021, p. 22](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=22&annotation=NBNN3GKY))
 
 
-### Finding Input and Output Values of a Function
+## Finding Input and Output Values of a Function
 
-#### Evaluation of Functions in Algebraic Forms
+### Evaluation of Functions in Algebraic Forms
 
 ::: {.callout-important}
 
@@ -218,7 +217,7 @@ $$
 :::::
 
 
-#### Evaluating Functions Expressed in Formulas
+### Evaluating Functions Expressed in Formulas
 
 ::: {.callout-important}
 **Given a function in equation form, write its algebraic formula**
@@ -232,15 +231,15 @@ $$
 “As we saw above, we can represent functions in tables” ([Abramson, 2021, p. 27](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=27&annotation=DK3E2RBY))
 
 
-#### Evaluating a Function Given in Tabular Form
+### Evaluating a Function Given in Tabular Form
 
 
-### Determining Whether a Function is One-to-One
+## Determining Whether a Function is One-to-One
 
-### Using the Vertical Line Test
+## Using the Vertical Line Test
 
-### Using the Horizontal Line Test
+## Using the Horizontal Line Test
 
-### Identifying Basic Toolkit Functions
+## Identifying Basic Toolkit Functions
 
 ## Section Exercises
