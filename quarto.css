@@ -12,14 +12,14 @@
 
 /* ##############   Resources   ############# */
 
-.resources {
+.my-resource {
   margin: 1em 0;
   border: 2px solid gray;
   border-left: 10px solid teal;
   border-radius: 10px;
 }
 
-.resources-header {
+.my-resource-header {
   margin-left: 0;
   padding-left:  60px;
   padding-top:  5px;
@@ -35,7 +35,7 @@
   background-image: url("img/icons8/books-48.png");
 }
 
-.resources-container {
+.my-resource-container {
   padding-top: 5px;
   padding-left: 10px;
   color: black;

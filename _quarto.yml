@@ -52,8 +52,8 @@ language:
 
 
 # https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language.yml
-   callout-tip-title: "Tip"              # green
-   callout-note-title: "Note"            # blue
-   callout-warning-title: "Wach out!"    # orange
-   callout-important-title: "Procedure"  # red
-   callout-caution-title: "TODO"         # yellow
+   callout-tip-title: "Tip"                   # green
+   callout-note-title: "Note"                 # blue
+   callout-warning-title: "Wach out!"         # orange
+   callout-important-title: "Procedure"       # red
+   callout-caution-title: "TODO"              # yellow

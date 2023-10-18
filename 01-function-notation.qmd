@@ -418,10 +418,557 @@ Using @fig-01-07 solve $f(x) = 1$
 
 ## Determining Whether a Function is One-to-One
 
+:::{#def-one-to-one-function}
+A one-to-one function is a function in which each output value corresponds to exactly one input value.
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 13**: Determining Whether a Relationship Is a One-to-One Function
+:::
+::::{.my-example-container}
+Is the area of a circle a function of its radius? If yes, is the function one-to-one?
+
+The area = $\pi \times r^2$. $\pi$ is a constant, so yes: The area of a circle is a function of its radius. Yes, it is a `r glossary("one-to-one function")`.
+::::
+:::::
+
+::: {.callout-warning}
+The book answer is more elaborate: It is important to say that both values of the function $f(r) = \sqrt\frac{{A}}{{\pi}}$ are positive numbers, so that there is only one solution!
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 9**
+:::
+::::{.my-example-container}
+(a) Is a balance a function of the bank account number? **Yes**
+(b) Is a bank account number a function of the balance? **No**
+(c) Is a balance a one-to-one function of the bank account number? **No**
+::::
+:::::
+
+::: {.callout-warning}
+My answer was correct, but in the future I should always add the reason for my solution: For example in this case:
+
+(a) **yes**, because each bank account has a single balance at any given time
+(b) **no**, because several bank account numbers may have the same balance
+(c) **no**, because the same output may correspond to more than one input
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 10**
+:::
+::::{.my-example-container}
+Evaluate the following:
+
+(a) If each percent grade earned in a course translates to one letter grade, is the letter grade a function of the percent grade?: **Yes**, the letter grade is a function of the percent grade as I can calculate the letter grade from each percent grade.
+(b) If so, is the function one-to-one? **No**, because different percent grades may result in the same letter grade.
+::::
+:::::
+
+
 ## Using the Vertical Line Test
+
+> “The **vertical line test** can be used to determine whether a graph represents a function. If we can draw any vertical line that intersects a graph more than once, then the graph does *not* define a function because a function has only one output value for each input value.” ([Abramson, 2021, p. 32](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=32&annotation=R9WLIZBA))
+
+::: {.callout-important}
+Given a graph, use the vertical line test to determine if the graph represents a function.
+
+1. Inspect the graph to see if any vertical line drawn would intersect the curve more than once.
+2. If there is any such line, determine that the graph does not represent a function.
+:::
+
+![Vertical line test: Whenever a vertical line crosses the curve more than once than it is *not* a function. Only the left graph is a function.](img/01-fig-11.png){#fig-01-11 
+fig-alt="Three different functions: Left: a S-curve around the x-axis representing a function, because a vertical line cannot not cross two points of the curve: Middle and right: Half an O open to thre right and an ellipse do not represent a function, because a vertical line intersect two different points of the curves." fig-align="center" 
+width="100%"}
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 14**
+:::
+::::{.my-example-container}
+Which of the graphs in @fig-01-12 represent(s) a function $y=f(x)$?
+
+![Applying the vertical test](img/01-fig-12.png){#fig-01-12 
+fig-alt="Three graphs: Left (a): an inverted S-curve crossing the coordinate axis. Middle (b): A line from (0,1) to (12,-3). Right (c): A circle with radio 3 centered at the the coordinate axis." fig-align="center" 
+width="100%"}
+
+**Solution**: (a) and (b) are functions. (c) is not a function, because a vertical line would cross twice the curve.
+
+::::
+:::::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 11**
+:::
+::::{.my-example-container}
+Does the graph in @fig-01-14 represent a function?
+
+![Does the graph represent a function?](img/01-fig-14.png){#fig-01-14 
+fig-alt="Graph shows a V with the deepest point at the coordinate axis." fig-align="center" 
+width="50%"}
+
+**Solution:** Yes, you can't cross with a vertical line the graph twice.
+::::
+:::::
 
 ## Using the Horizontal Line Test
 
+> “Once we have determined that a graph defines a function, an easy way to determine if it is a one-to-one function is to use the horizontal line test. Draw horizontal lines through the graph. If any horizontal line intersects the graph more than once, then the graph does not represent a one-to-one function.” ([Abramson, 2021, p. 34](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=34&annotation=L9I5J3YA))
+
+::: {.callout-important}
+Given a graph of a function, use the horizontal line test to determine if the graph represents a one-to-one function.
+
+1. Inspect the graph to see if any horizontal line drawn would intersect the curve more than once.
+2. If there is any such line, determine that the function is not one-to-one.
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Example 15**
+:::
+::::{.my-example-container}
+Consider the functions shown in @fig-01-12(a) and @fig-01-12(b). Are either of the functions one-to-one?
+
+**Solution**: Only @fig-01-12(b) is a one-to-one function, because a horizontal line cannot cross the graph twice. @fig-01-12(a) is not a one-to-one function because a horizontal line would cross the curve three times.
+::::
+:::::
+
+::: {.callout-warning}
+The book answer is more detailed: There are places where a horizontal line would only cross once (for example at y = 4 or y = -4), places where it would cross twice (for example y = 3 or y = -3, here the horizontal line is a tangent and a crossing), but there also places (as I have mentioned in my solution) where the horizontal line intersects the graph three times (for instance y = 0).
+
+The important thing is that it is not a one-to-one function if it could cross more than once.
+:::
+
+:::::{.my-example}
+:::{.my-example-header}
+**Try it 12**
+:::
+::::{.my-example-container}
+Is the graph shown in @fig-01-12(c) one-to-one?
+
+**Solution**: No, a horizontal line intersects the graph twice. 
+::::
+:::::
+
+
 ## Identifying Basic Toolkit Functions
 
+There are some 
+
+> “toolkit functions,” which form a set of basic named functions for which we know the graph, formula, and special properties.” ([Abramson, 2021, p. 35](zotero://select/library/items/U57DQZPG)) ([pdf](zotero://open-pdf/library/items/68C8JXSW?page=35&annotation=9UJ2IB3U))
+
+I will add the full table so that I can consult these different functions with their name and properties.
+
+![](img/toolkit-functions-1.png){#fig-toolkit-1 
+fig-alt="alt-text" fig-align="center" 
+width="100%"}
+![Toolkit Functions](img/toolkit-functions-2.png){#fig-toolkit-2 
+fig-alt="alt-text" fig-align="center" 
+width="100%"}
+
+
+## Other Resources
+
+:::::{.my-resource}
+:::{.my-resource-header}
+Access the following online resources for additional instruction and practice with functions
+:::
+::::{.my-resource-container}
+- [Determine if a Relation is a Function](http://openstax.org/l/relationfunction) 
+- [Vertical Line Test](http://openstax.org/l/vertlinetest) 
+- [Introduction to Functions](http://openstax.org/l/introtofunction) 
+- [Vertical Line Test on Graph](http://openstax.org/l/vertlinegraph)
+- [One-to-one Functions](http://openstax.org/l/onetoone) 
+- [Graphs as One-to-one Functions](http://openstax.org/l/graphonetoone)
+::::
+:::::
+
+
 ## Section Exercises
+
+::: {.callout-note}
+I will only try odd numbered exercises as only these puzzles have published solutions officially.
+:::
+
+### Verbal
+
+:::::{.my-solution}
+:::{.my-solution-header}
+1. What is the difference between a relation and a function?
+:::
+::::{.my-solution-container}
+Relation is an umbrella-term signifying a general relationship between two items. A function is a more specialized notion where every input item produces an output item.
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+3. Why does the vertical line test tell us whether the graph of a relation represents a function?
+:::
+::::{.my-solution-container}
+If the vertical line test does intersect only once with the graph then it conforms with the definition of a function, where each input is related to one output.
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+5. Why does the horizontal line test tell us whether the graph of a function is one-to-one?
+:::
+::::{.my-solution-container}
+If the horizontal line test does only intersect once with the graph then the graph represents a one-to-one function.
+::::
+:::::
+
+### Algebraic
+
+:::::{.my-solution}
+:::{.my-solution-header}
+7. Determine whether the relation represents a function.
+:::
+::::{.my-solution-container}
+{$(a,b), (b,c), (c,c)$}
+
+Yes, this is a function because each input relates to an input, even if two different input items (b and c) relate to the same outcome (c). But if vice versa the same input item would point to two different output item then it would not be a function.
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+9. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$y = x^2$ **Yes**
+
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+11. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$3x^2 + y = 14$ **Yes**
+
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+13. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$y = -2x^2 + 40$ **Yes**
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+15. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$x = \frac{3y + 5}{7y - 1}$ **Yes**
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+17. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$y = \frac{3x + 5}{7x - 1}$ **Yes**
+::::
+:::::
+
+
+:::::{.my-solution}
+:::{.my-solution-header}
+19. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$2xy = 1$ **Yes**
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+21. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$y = x^3$ **Yes**
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+23. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$x = \pm\sqrt{1-y}$ **Yes**
+::::
+:::::
+
+::: {.callout-warning}
+## NEEDS REWRITING (Exercise 23, 33 and 37)
+
+I have to rewrite this callout after watching [Does $x = ±sqrt(1 − y)$ represent $y$ as a Function of $x$?](https://www.youtube.com/watch?v=jOlhdHZ39Yk) of The Glaser Tutorial Company!
+
+An additional question: Do I have to solve the equations of all questions of this kind (asking if it is a function or not) and to draw the equation in order to apply the vertical line test?
+
+It is also a good idea to compare the Precalculus exercises with the [Math topics of the videos](https://www.youtube.com/@GlaserTutoring/playlists?view=50&sort=dd&shelf_id=4) of The Glaser Tutorial Company. There are several hundreds of videos and it seems there is not only an overlap with Precalculus but their videos are following in detail the Precalculus content!
+
+
+***
+I thought that exercise 23 is not a function because of $\pm$, signifying that there are two output values. Actually I did not understand why exercise 23 is a function.
+
+So I searched for a solution of the equation in the internet and found exactly my question asked at [math.stackexchange](https://math.stackexchange.com/questions/4040159/when-x-pm-sqrty-1-is-y-a-function-of-x-how-to-deal-with-the-pm)!
+
+After reading the question and both answers with all comments several times I believe I understood the problem: Central for my understanding was the start of the answer by [Rhys Hughes](https://math.stackexchange.com/users/487658/rhys-hughes) followed by his comment: 
+
+$$
+\begin{align*}
+x = \pm y \\
+x^2 = y^2 (\text{and not }\pm y^2 \text{ because …} ) \\
+x^2 = \pm (y^2) \\
+x^2 = \pm(1)^2y^2 \\
+x^2 = y^2
+\end{align*}
+$$
+
+:::
+
+
+
+:::::{.my-solution}
+:::{.my-solution-header}
+25. Determine whether the relation represents $y$ as a function of $x$.
+:::
+::::{.my-solution-container}
+$y^2 = x^2$ **No**
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+27. Evaluate $f$ at the indicated values $f(-3), f(2), f(-a), -f(a), f(a+h)$. 
+
+:::
+::::{.my-solution-container}
+$f(x) = 2x -5$
+
+$$
+\begin{align*}
+f(-3) = -6 -5 = -11 \\
+f(2) = -1 \\
+f(-a) = -2a -5 \\
+-f(a) =  -(2a -5) = -2a + 5\\
+f(a+h) = 2(a+h) - 5 = 2a + 2h - 5
+\end{align*}
+$$
+::::
+:::::
+
+
+:::::{.my-solution}
+:::{.my-solution-header}
+29. Evaluate $f$ at the indicated values $f(-3), f(2), f(-a), -f(a), f(a+h)$. 
+:::
+::::{.my-solution-container}
+$f(x) = \sqrt{2-x} + 5$
+
+$$
+\begin{align*}
+f(-3) = \sqrt{2-(-3)} + 5 = \sqrt{5} + 5 \\
+f(2) = \sqrt{2-2} + 5 = 5 \\
+f(-a) = \sqrt{2-(-a)} + 5 = \sqrt{2+a} + 5 \\
+-f(a) = -(\sqrt{2-a} + 5) = -\sqrt{2-a} - 5 \\
+f(a+h) = \sqrt{2-(a+h)} + 5 = \sqrt{2 - a - h} + 5
+\end{align*}
+$$
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+31. Evaluate $f$ at the indicated values $f(-3), f(2), f(-a), -f(a), f(a+h)$.
+:::
+::::{.my-solution-container}
+$f(x) = \mid x-1 \mid - \mid x+1 \mid$
+
+$$
+\begin{align*}
+f(-3) = | - 3 - 1 | - | -3 + 1 | = 4 - 2 = 2\\
+f(2) = | 2 - 1 | - | 2 + 1 | = 1 - 3 = -2 \\
+f(-a) = |-a -1| - |-a +1| \\
+-f(a) = -(|a - 1| - |a + 1|) \\
+f(a+h) = |a + h -1| - |a + h +1|
+\end{align*}
+$$
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+33. Given the function $g(x) = x^2 + 2x$, evaluate $\frac{g(x) - g(a)}{x-a}, x \ne a$.
+:::
+::::{.my-solution-container}
+$$
+\begin{align*}
+\frac{g(x) - g(a)}{x-a} = \frac{(x^2 + 2x) - (a^2 + 2a)}{x-a} \\
+\frac{g(x) - g(a)}{x-a} = \frac{x^2 + 2x - a^2 - 2a}{x-a} \\
+\frac{g(x) - g(a)}{x-a} = \frac{(x-a)(x+a+2)}{x-a} \\
+\frac{g(x) - g(a)}{x-a} = x + a + 2
+\end{align*}
+$$ {#eq-exercise-1-33}
+::::
+:::::
+
+::: {.callout-warning}
+I had no idea how to solve Exercise 33 (@eq-exercise-1-33) . Again I found the explication of the solution at [math.stackexchange](https://math.stackexchange.com/questions/3619578/given-gx-x2-2x-evaluate-frac-gx-gax-a).
+
+Decisive for my understanding were three points:
+
+1. I had only to substitute for $g(x)$ and $g(a)$. So the denominator $x-a$ remains $x-a$.
+2. The substitute for $g(a)$ is equivalent to the substitute for $g(x)$. Instead of $g(x) = x^2 + 2x$ I have to use $g(a) = a^2 + 2a$.
+3. The factorization with $(x-a)$, so that the denominator can be cancelled. I have to confess that I have limited knowledge of [polynomial factorization](https://mathworld.wolfram.com/PolynomialFactorization.html).
+
+:::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+35. Given the function $f(x) = 8-3x$
+:::
+::::{.my-solution-container}
+Evaluate $f(-2)$
+
+$$
+\begin{align*}
+f(-2) = 8 - 3 (-2) \\
+f(-2) = 14
+\end{align*}
+$$
+
+Solve $f(x) = -1$
+
+$$
+\begin{align*}
+-1 = 8 - 3x \\
+- 1 - 8 = -3x \\
+\frac{-9}{-3} = x \\
+3 = x
+\end{align*}
+$$
+::::
+:::::
+
+:::::{.my-solution}
+:::{.my-solution-header}
+37. Given the function $f(x) = x^2 - 3x$
+:::
+::::{.my-solution-container}
+Evaluate $f(5)$
+
+$$
+\begin{align*}
+f(5) = 5^2 - 3 \times 5\\
+f(5) = 10
+\end{align*}
+$$ 
+
+Solve $f(x) = 4$
+
+$$
+\begin{align*}
+x^2 - 3x = 4\\
+4 + 3x = x^2 \\
+\end{align*}
+$$ {#eq-exercise-1-37}
+::::
+:::::
+
+::: {.callout-warning}
+I couldn't solve the second part of the exercise: Solve $f(x) = 4$. I searched on the internet and discovered [Mathepower](https://www.mathepower.com/en/index.php), a program for solving equation. I entered my problem and got the following correct answer with a detailed explanation of every step of calculation.
+
+My problem: I do not know how to complete the square.
+
+![Solution of Mathepower for $x^2 - 3x = 4$ is the solution set {4; 1} ](img/mathepower-solution.png){#fig-mathepower-solution.png 
+fig-alt="Calculation of $x^2 - 3x = 4$, explained step by step" fig-align="center" 
+width="100%"}
+
+To generate a soluton I could have used also [WolframAlpha](https://www.wolframalpha.com/).
+
+![Solution of WolframAlpha for $x^2 - 3x = 4$ is plotting the graph and displays not only the solution {4; 1}, but also alternative forms of the equation formula  ](img/wolfram-alpha-solution.png){#fig-wolfram-alpha-solution
+fig-alt="Displays input ($x^2 - 3x = 4$), plots the graph, shows alternate form of the equation, the numberline with the solution and the algebraic solution set." fig-align="center" 
+width="100%"}
+:::
+
+
+::: {.callout-caution}
+I got the impression that I need to refresh my knowledge about factoring `r glossary("Polynomial Math", "polynomials")` and solving of quadratic equations. So I registered with the Khan Academy and finished Unit 13 [Quadratics:Multiplying & Factoring](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring) of Algebra 1.
+
+At first I thought I would need also need Unit 14  [Quadratic functions & equation](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations), but after some exercises I got the impression that these skills already overlap with the tutorials of the Precalculus book, so I stopped my excursion for the time being.
+
+:::
+
+::: {.callout-warning}
+Ok, so with that refreshed knowledge I understand now better the factoring solution of Exercise 33 (@eq-exercise-1-33) and solving strategy of Exercise 37 (@eq-exercise-1-37). But still it was not everything completely clear to me.
+
+**1. Given the function $g(x) = x^2 + 2x$, evaluate $\frac{g(x) - g(a)}{x-a}, x \ne a$**
+
+In @eq-exercise-1-33 I understood that I need to factor out the denominator $x-a$. But whenever I tried it I got a slightly different result $x+a+4$ instead of $x+a+2$. Looking again in the internet I noticed that there is a [YouTube video](https://www.youtube.com/watch?v=xdQj-YWHFhg) by [The Glaser Tutoring Company](https://www.youtube.com/@GlaserTutoring) exactly to the same problem: Evaluate the Given Function: $g(x) = x2 + 2x$!!
+
+It turned out that I factored out wrongly:
+
+$$
+\begin{align*}
+\frac{g(x) - g(a)}{x-a} = \frac{(x^2 + 2x) - (a^2 + 2a)}{x-a}\\
+= \frac{x(x+2)-(a)(a+2)}{x-a} \\
+= (x+2)-(a+2) \text{ Cancelation of } x-a \text{ is WRONG!}\\ 
+= x-a+4
+\end{align*}
+$$
+
+The correct way is:
+
+$$
+\begin{align*}
+\frac{g(x) - g(a)}{x-a} = \frac{(x^2 + 2x) - (a^2 + 2a)}{x-a} \\
+= \frac{x^2 + 2x - a^2 - 2a}{x-a} \\
+= \frac{x^2 - a^2 + 2x - 2a}{x-a} \text{ regrouping the nominator!} \\
+= \frac{(x+a)(x-a) + (2x - 2a)}{x-a}  \text{ a term of the form } (a^2-b^2) \text{ is always} (a+b)(a-b)! \\
+= \frac{(x+a)(x-a) +2(x - a)}{x-a} \text{ factor out 2 in the second term}\\
+\text{ only now it is save to cancel } (x-a)!\\
+= (x+a)+2 \text{ = solution!}
+\end{align*}
+$$
+
+**2. Given the function $f(x) = x^2 - 3x$ solve for $f(x) = 4$**
+
+Concerning @eq-exercise-1-37 I learned that I have to set quadratic equations to 0. But I didn't understand why MathePower completed the square by adding $-(\frac{3}{2})^2$. Finally I solved this exercise again with the help of a [YouTube video](https://www.youtube.com/watch?v=5MOD3OoP2nI) by [The Glaser Tutoring Company](https://www.youtube.com/@GlaserTutoring). 
+
+I knew that I could factor out the equation $0 = x^2 - 3x - 4$ with +1 and -4 but then I forgot that each product has to be set to zero. (Even I learned this one day before!). So - instead of not using the more complex solution with $-(\frac{3}{2})^2$ - I got:
+
+$$
+\begin{align*}
+x^2 - 3x = 4\\
+x^2 - 3x - 4 = 0 \\
+(x - 4)(x + 1) = 0 \text{ now: set each term to zero} \\
+x - 4 = 0; x = 4 \\
+x + 1 = 0; x = -1 \\
+\text{The solution set is } \{4; -1\}
+\end{align*}
+$$
+:::
+
+
+
+### Graphical
+
+### Numeric
+
+### Technology
+
+### Real-world Applications
