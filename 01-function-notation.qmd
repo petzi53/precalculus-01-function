@@ -131,7 +131,7 @@ $$
 :::
 
 ::: my-example-container
-**Given the function** $h(p) = p^2 + 2p, evaluate h(4)$\$
+**Given the function** $h(p) = p^2 + 2p?, evaluate ?h(4)$\$
 
 $$
 \begin{align*}
@@ -898,7 +898,7 @@ My problem: I do not know how to complete the square.
 fig-alt="Calculation of $x^2 - 3x = 4$, explained step by step" fig-align="center" 
 width="100%"}
 
-To generate a soluton I could have used also [WolframAlpha](https://www.wolframalpha.com/).
+To generate a solution I could have used also [WolframAlpha](https://www.wolframalpha.com/).
 
 ![Solution of WolframAlpha for $x^2 - 3x = 4$ is plotting the graph and displays not only the solution {4; 1}, but also alternative forms of the equation formula  ](img/wolfram-alpha-solution.png){#fig-wolfram-alpha-solution
 fig-alt="Displays input ($x^2 - 3x = 4$), plots the graph, shows alternate form of the equation, the numberline with the solution and the algebraic solution set." fig-align="center" 
@@ -907,7 +907,7 @@ width="100%"}
 
 
 ::: {.callout-caution}
-I got the impression that I need to refresh my knowledge about factoring `r glossary("Polynomial Math", "polynomials")` and solving of quadratic equations. So I registered with the Khan Academy and finished Unit 13 [Quadratics:Multiplying & Factoring](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring) of Algebra 1.
+I got the impression that I need to refresh my knowledge about factoring `r glossary("polynomials")` and solving of quadratic equations. So I registered with the Khan Academy and finished Unit 13 [Quadratics:Multiplying & Factoring](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratics-multiplying-factoring) of Algebra 1.
 
 At first I thought I would need also need Unit 14  [Quadratic functions & equation](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations), but after some exercises I got the impression that these skills already overlap with the tutorials of the Precalculus book, so I stopped my excursion for the time being.
 
