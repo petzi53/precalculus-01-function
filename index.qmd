@@ -91,6 +91,8 @@ Sometimes I use R Code for calculation or visualization tasks.
 
 > R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. To download R, please choose your preferred CRAN mirror. ([The R Project for Statistical Computing](https://www.r-project.org/))
 
+To learn and remember better which R packages are used I am not using the `library()` function but will add the package name before the function name like `ggplot2::aes()`. Exceptions are those function that are part of one of the packages of R standard system library.
+
 :::::{.r-code}
 :::{.r-code-header}
 :::::: {#cnj-code-example}
@@ -179,4 +181,16 @@ Additional resources I have used for this Quarto book
 ::::
 :::::
 
+
+```{r}
+quad_func <- tibble::tibble(x = seq(-10, 10, 0.01),
+                    y = -(1 / 7) * (x^2 + 7),
+                    y2 = -(1 / 7) * (x - 7) * (x + 7),
+                    y3 = -(1 / 7) * (x^2 - 49))
+
+ggplot2::ggplot(quad_func, ggplot2::aes(x, y2)) +
+  ggplot2::geom_line(breaks = 1:10) +
+  ggplot2::scale_x_continuous(breaks = seq(-10, 10, 1)) +
+  ggplot2::scale_y_continuous(breaks = seq(-10, 10, 1))
+```
 
